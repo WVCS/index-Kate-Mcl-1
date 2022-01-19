@@ -1,3 +1,43 @@
 body {
+h4{
+  color: #81968F;
+}
 
+h4{
+  text-align: center;
+}
+
+h5{
+  color: #FFFD99;
+}
+
+h5{
+  text-align: center;
+}
+body{
+  background-color: #6A6EA0;
+}
+
+h4{
+  letter-spacing: 20px;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+h4{
+  line-height: 0.8 }
+
+h4{
+  font-size: 100px;
+}
+
+h5{
+  font-size: 50px;
+}
+
+img:hover{
+  border: dotted 50px white; width: 1000px;
+}
 }
