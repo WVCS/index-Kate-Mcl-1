@@ -1,3 +1,108 @@
 <html>
-  Place holder for the cafe
+<body>
+  <div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c"><img width="540" height="440" src="http://4.bp.blogspot.com/-ltvkLSQ8c7Y/U-1Wainbu-I/AAAAAAAASso/O-eJIPv4g3k/s1600/Rabbit%2BBread%2BBuns%2BRecipe%2B(3).JPG">
+<img width="600" height="441" src="https://lh4.googleusercontent.com/-gPlW8sqhRKg/UU-VVKlUAYI/AAAAAAADjDQ/A-Ehm4vPdWw/s640/bunny-buns-24.jpg">
+  </div>
+   
+    <div class="box d">
+      <center> <div class="box e"> Store Hours</div>
+    <div class="box f">
+      <table>
+  <tr>
+    <td>Monday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+    <tr>
+    <td>Sunday</td>
+    <td>9:00 A.M to 4:00 P.M</td>
+  </tr>
+</table> </center>
+</div>
+  
+</body>
 </html>
+  <style>
+    body {
+  margin: 40px;
+  background-color: #C9E4E7;
+}
+
+  .wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 150px 100px 150px 100px ;
+    grid-template-rows: repeat(3,minmax(100px,auto));
+    background-color: #C9E4E7;
+    color: #444;
+  }
+
+  .box {
+    background-color: #F1F4F9;
+    color: #bbb;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+
+  .box .box {
+    background-color: #FDD8E7;
+    color: #945600;
+  }
+
+  .a {
+    grid-column: 1 / 6;
+  }
+
+  .b {
+    grid-column: 1 / 6 ;
+  }
+
+  .c {
+    grid-column: .5;
+    grid-row: 2 / 4;
+  }
+
+  .d{
+    grid-column: 1 / 5;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    width: 50%;
+    height: 50%;
+  }
+.e{
+  text-align: center;
+  width: 80%;
+  height: 3%;
+}
+.f{
+  font-size: 90%;
+  width: 80%;
+  font-size: 58%
+}
+    <style>
