@@ -71,3 +71,133 @@
   </div>
 </div>
 </body>
+<style>
+body{
+  background-color: white; 
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: solid 1px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+body {
+  margin: 40px;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #fff;
+  color: #444;
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 600px) {
+
+  /* no grid support? */
+  .block-a, .block-b, .block-c {
+    float: left;
+    width: 19.1489%;
+  }
+
+  .content {
+    float: right;
+    width: 79.7872%;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  
+  .header{
+    grid-column: 1 / -1;
+    /* needed for the floated layout */
+    clear: both;
+  }
+  h2{
+     text-decoration: underline;
+    font-size: 20px; 
+  }
+  
+  .block-a {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  img{
+    width: 250px; 
+  }
+  
+  .block-b {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  .block-c {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  .content {
+    grid-column: 2;
+    grid-row: 2 / 7;
+}
+ #Tours {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Tours td, #Tours th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 15px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+  button2 {border-radius: 4px;}
+  }
+
+.wrapper > * {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+</style>
