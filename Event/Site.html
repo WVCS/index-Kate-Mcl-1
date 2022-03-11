@@ -5,12 +5,14 @@
     <title> GOOBER TOUR </title>
   </head>
 <body>
-  <div class="topnav">
-  <a class="active" href="../index.html">Home</a>
-  <a href="https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese/">About</a>
-  <a href="https://www.wikihow.com/images/thumb/3/33/Report-Cyberbullying-Step-1.jpg/v4-460px-Report-Cyberbullying-Step-1.jpg.webp">Contact</a>
-  <input type="text" placeholder="Search..">
-</div>
+   <nav>
+      <li classes="nav"> <a href="../index.html"> Home </a> </li>
+      <li classes="nav"> <a href="../cake.html"> Cake </a> </li>
+        <li classes="nav"> <a href="../convince.html"> Convince Site </a> </li>
+          <li classes="nav"><a href="../cafe/cafesite.html"> Cafe Site </a> </li>
+           <li classes="nav"><a href="Event/Site.html"> Event Site </a> </li>
+      <div class="search"><a> <input type="text" placeholder="Search.."> </a> </div>
+  </nav>
 <div class="wrapper">
   <header class="header">
    <h3> Tours and Dates
@@ -88,27 +90,31 @@
 body{
   background-color: white; 
 }
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
+  .nav{
+  list-style type: none;
+  position: fixed; 
+  background-color: white; 
+  Width: 100%;
+  left: 0;
+  top: 0;
 }
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: solid 1px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+li{
+  display: inline; 
+  float: left; 
+  padding: 10px
 }
+a {
+  text-decoration: none; 
+  color: Black; 
+  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.search{
+  float: right; 
 body {
   margin: 40px;
   font-family: 'Open Sans', 'sans-serif';
