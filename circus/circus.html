@@ -1,5 +1,5 @@
 <html>
-<head>
+  <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -19,26 +19,54 @@
   </div>
 </div>
  <br> <div class="bg"></div>
-  
   <hr class="solid">
+    <div class="row">
+  <div class="columntwo">
+    <div class="card">
+      <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/DarcelGlover.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Darcel Glover</h2>
+        <p class="title">Juggler</p>
+        <p>I am ready to juggle some jiggly balls.</p>
+        <p>dglover@circus.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="columntwo">
+    <div class="card">
+      <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TeriHeard.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Teri Heard</h2>
+        <p class="title">Tightrope Walker</p>
+        <p> I decided to walk above all the hate!</p>
+        <p>theard@circus.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
   
-<div class="row">
-  <div class="column">
-    <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/DarcelGlover.jpg" alt="Glover" style="width:50%">
-  </div>
-  <div class="column">
-    <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TeriHeard.jpg" alt="Heard" style="width:50%">
-  </div>
-  <div class="column">
-    <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/ShannonParker.jpg" alt="Parker" style="width:50%">
+  <div class="columntwo">
+    <div class="card">
+      <img src="https://www.powayusd.com/PUSD/media/WVHS/images/Staff/ShannonParker.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Shannon Parker</h2>
+        <p class="title">Plank Diver</p>
+        <p>I want to dive right into your heart! </p>
+        <p>shparker@circus.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
   </div>
 </div>
 
 
+  <hr class="solid">
 </body>
 </html>
-<style> 
-body, html {
+<style>
+  body, html {
   width: 100vw;
  height: 95vh;
   margin: 0;
@@ -130,31 +158,64 @@ body, html {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-* {
+
+/* Solid border */
+hr.solid {
+  border-top: 20px solid #C1AB5C;
+}
+html {
   box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 33.2%;
-  padding: 99px;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
+.columntwo {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columntwo {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
+.title {
+  color: grey;
 }
-/* Solid border */
-hr.solid {
-  border-top: 20px solid #C1AB5C;
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
 }
 </style>
