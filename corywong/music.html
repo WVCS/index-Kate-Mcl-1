@@ -1,0 +1,160 @@
+<html>
+<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">HOME</a>
+  <a href="#">MERCHANDISE</a>
+  <a href="#">TOUR DATES</a>
+</div>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <center> <h1> Music and Us </h1> </center>
+</div>
+ <center> <img width="45%" src="https://slyvinyl.com/wp-content/uploads/2020/10/CW_Trails_Vinyl_Mockup_Complete.jpg"></center>
+
+  <h2> History of Us </h2>
+  <div class="newspaper">
+Wong attended University of Minnesota and the McNally Smith College of Music. At age 20 he decided to pursue music professionally. He credits his music school environment and his mentors for putting him on the right track. In particular he credits Peruvian guitarist Andrés Prado and Prince's drummer Michael Bland for showing him the nuances and cohesion of performing in an ensemble.He names guitarists Dave Williams and Paul Jackson Jr. as early influences. In late 2000s and early 2010s, Wong focused on jazz music and performed in Minneapolis–Saint Paul jazz clubs. He released two records with jazz ensembles, Even Uneven in 2008 and Quartet/Quintet in 2012. In 2013, for a six-month period he performed in the Minneapolis-based band Dr. Mambo's Combo with several veterans of the city's R&B-pop-funk music scene including members of Prince's band: Michael Bland and bassist Sonny T. He calls this period his learning curve in performing "vibrant funk soul" music.In 2013, Wong met members of the Ann Arbor-based band Vulfpeck.He did a jam with the group which was later rerecorded and released as "Cory Wong". In 2016, he started recording and touring with the band. He has recorded on every Vulfpeck album since then and toured with the band. He said of his guitar sound with Vulfpeck: "part of my sound is kind of bringing rhythm guitar to the front". He is a member of The Fearless Flyers, an instrumental quartet (with Vulfpeck's bass player Joe Dart, Snarky Puppy's guitarist Mark Lettieri and drummer Nate Smith) and has released three EPs and an album with the group. 
+</div>
+  <br> 
+   <center> <div class="videos"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1YPV3B1Ou3rarSL9jukfQL?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/594a2gJwaid7KGIn9QhYJL?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+ <br> 
+     <!-- Add font awesome icons -->
+<a href="https://twitter.com/corywong?lang=en" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/c/CoryWongMusic" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/coryjwong/" class="fa fa-instagram"></a>
+<a href="https://www.reddit.com/r/CoryWong/" class="fa fa-reddit"></a>
+     </html> 
+      <style>
+        body {
+  font-family: "Lato", sans-serif;
+}
+/*the body. Once you open the sidebar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*this is text inside the navbar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color:  #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+/*the x that closes the nav bar*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: navy;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+img{
+  border: solid 2px navy; 
+}
+h1{
+  text-decoration: underline; 
+}
+.newspaper {
+  column-count: 4;
+  text-font: "Monospace", Courier New;
+  width: 75%; 
+}
+h2{
+  text-decoration: underline; 
+}
+.videos{
+  padding: 10%; 
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+      </style>
+      <script>
+        /* Nav bar */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+/*closing the nav bar*/
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+      </script>
