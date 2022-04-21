@@ -1,0 +1,157 @@
+<html> 
+<body>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">HOME</a>
+  <a href="#">TOUR DATES</a>
+  <a href="#">MUSIC AND US</a>
+</div>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <center> <h1> Merchandise </h1> </center>
+</div>
+ <center> <img width=800px height=500px src="https://cdn.mos.cms.futurecdn.net/dYa3NWabkzKbkZithRXBRP.jpg"> <center> 
+   <br>
+   <center> <table style="width:100%">
+
+<hr class="rounded">
+  <table>
+     <tr>
+    <td> <div class="card">
+  <img src="https://cdn.shopify.com/s/files/1/0567/2652/0003/products/Cory-NextLevel6010-WhitePrint-Recovered-3_250x250@2x.jpg?v=1620948179" alt="Denim Jeans" style="width:100%">
+  <h1>Wong Notes T-Shirt</h1>
+  <p class="price">$24.99</p>
+  <p>Softest cotton material, breathable fabric, minimalistic design, and represent the Wong Notes. </p>
+  <p><button>Add to Cart</button></p>
+    </div> </td>
+    <th><div class="card">
+  <img src="https://cdn.shopify.com/s/files/1/0567/2652/0003/products/wongpizzacrewfinal_360x.jpg?v=1649376231" alt="Denim Jeans" style="width:100%">
+  <h1>Pizza Crewneck</h1>
+  <p class="price">$45.00</p>
+  <p>Softest cotton material, breathable fabric, minimalistic design, and represent the Wong Notes. </p>
+  <p><button>Add to Cart</button></p>
+    </div></th>
+    <th><div class="card">
+  <img src="https://cdn.shopify.com/s/files/1/0567/2652/0003/products/SONNY_T_shirt_360x.jpg?v=1620168229" alt="Denim Jeans" style="width:100%">
+  <h1>The Sonny Tee</h1>
+  <p class="price">$29.99</p>
+  <p>Softest cotton material, breathable fabric, minimalistic design, and represent the Wong Notes. </p>
+  <p><button>Add to Cart</button></p>
+    </div></th>
+     </tr> 
+   </table> </center>
+     </body> 
+</html>
+<style>
+/*the body. Once you open the sidebar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*this is text inside the navbar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color:  #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+/*the x that closes the nav bar*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: navy;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+h1{
+  text-decoration: underline; 
+}
+img{
+  border: solid 2px navy; 
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 0px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+table, th, td {
+  border:none;
+  padding: 25px; 
+}
+hr.rounded {
+  border-top: 8px solid navy;
+  border-radius: 5px;
+}
+</style>
+<script>
+/* Nav bar */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+/*closing the nav bar*/
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
