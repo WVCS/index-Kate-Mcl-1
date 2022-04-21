@@ -1,0 +1,144 @@
+<html>
+ <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">HOME</a>
+  <a href="#">MERCHANDISE</a>
+  <a href="#">MUSIC AND US</a>
+</div>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <center> <h1> Tour Dates </h1> </center>
+</div>
+ <center> <img width="70%" src="https://cdn.mos.cms.futurecdn.net/ZwcTf8BxGvnrZkeuhNAMEb-1200-80.jpg"></center>
+<center>  <table>
+  <tr>
+    <td>April 9, 2022</td>
+    <td>Auditorium Parco della Musica</td>
+    <td>Rome, Italy</td>
+    <td><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFo6s943L8x85fmSBncl8SC_yKOVmJcHd0I5bA8nqJSZoo3pehSWucnE8akfoCpxFGPS0:https://preview.redd.it/z6hw2tcaicr51.jpg%3Fauto%3Dwebp%26s%3D917458e48fa4396816a37ad9ae04ecfa23ad8451&usqp=CAU"><button type="button">Tickets</button></a></td>
+  </tr>
+  <tr>
+    <td>April 29, 2022</td>
+    <td>Republic NOLA</td>
+    <td>New Orleans, LA </td>
+    <td><a href="https://media.makeameme.org/created/need-distraction-why.jpg"><button type="button">Tickets</button></a></td>
+  </tr>
+  <tr>
+    <td>May 7th, 2022</td>
+    <td>SYMPHONY BALL 2022 CONCERT AND PARTY: BRILLIANCE</td>
+    <td>Minneapolis, MN</td>
+    <td><a href="https://cuchimes.com/wp-content/uploads/2022/02/PXL_20220127_012138894.jpg"><button type="button">Tickets</button></a></td>
+  </tr>
+  <tr>
+    <td>May 13th, 2022</td>
+    <td>Friday Cheers</td>
+    <td>Richmond, VA</td>
+    <td><a href="https://cuchimes.com/wp-content/uploads/2022/02/PXL_20220127_012138894.jpg"><button type="button">Tickets</button></a></td>
+  </tr>
+  <tr>
+    <td>May 28th, 2022</td>
+    <td>Summer Camp Music Festival</td>
+    <td>
+Chillicothe, IL</td>
+    <td><a href="https://cuchimes.com/wp-content/uploads/2022/02/PXL_20220127_012138894.jpg"><button type="button">Tickets</button></a></td>
+  </tr>
+  </table> </center>
+</body>
+</html>
+<style> 
+body {
+  font-family: "Lato", sans-serif;
+}
+/*the body. Once you open the sidebar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*this is text inside the navbar*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color:  #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+/*the x that closes the nav bar*/
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: navy;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+img{
+  border: solid 2px navy; 
+}
+h1{
+  text-decoration: underline; 
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th, td {
+  padding: 35px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+button {
+  padding: 10px; 
+  border: solid 3px #EBC470; 
+  background-color: navy; 
+  color: #EBC470; 
+}
+</style> 
+<script> 
+/* Nav bar */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+/*closing the nav bar*/
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script> 
