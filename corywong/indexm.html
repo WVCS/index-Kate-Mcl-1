@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cory Wong</title>
+  <link rel="icon" href="Cory Wong-logos_black.png">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+</head>
+<body>
+<img id="corry" onclick="playAudio()" src="CoryWong.png" width="1000px" height="600px">
+<img id="logo" src="Cory Wong-logos_black.png" width="200px" height="200px">
+<a href="tour.html"><img id="op1" src="1rstopstation.gif" width="400px" height="100px"></a>
+<a href="merchandise.html"><img id="op2" src="2ndopstation.gif" width="400px" height="100px"></a>
+<a href="music.html"><img id="op3" src="3rdopstation.gif" width="400px" height="100px"></a>
+<h1>CORY<br>WONG</h1>
+<audio id="myAudio">
+  <source src="DeanTown.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
+<style>
+body{
+  margin: 0;
+  background-color: #FFD400;
+  overflow:hidden;
+}
+#corry{
+  position:absolute;
+  bottom:-10px;
+  transition:.1s;
+}
+#logo{
+  position:fixed;
+  left:50px;
+}
+#op1{
+  position:absolute;
+  bottom:100px;
+  left:650px;
+  z-index:-1;
+  transition:1s;
+}
+#op2{
+  position:absolute;
+  bottom:250px;
+  left:650px;
+  transform: rotate(-5deg);
+  z-index:-1;
+  transition:1s;
+}
+#op3{
+  position:absolute;
+  bottom:400px;
+  left:600px;
+  transform: rotate(-10deg);
+  z-index:-1;
+  transition:1s;
+}
+h1{
+  font-family: 'Bebas Neue';
+  font-size: 100px;
+  color: #2E294E;
+  position:absolute;
+  right:20%;
+  top: 30%;
+}
+#op1:hover{
+  z-index:2;
+  width:600px;
+  height:150px;
+}
+#op2:hover{
+  z-index:2;
+  width:600px;
+  height:150px;
+}
+#op3:hover{
+  z-index:2;
+  width:600px;
+  height:150px;
+}
+#corry:hover{
+  bottom:0px;
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+</style>
+<script>
+var x = document.getElementById("myAudio");
+function playAudio() {
+  x.play();
+  /*document.getElementById("myDIV").style.display = "block";*/
+}
+</script>
