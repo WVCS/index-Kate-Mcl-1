@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>S.Stow</title>
-  <link rel="icon" type="image/x-icon" href="{INSERT IMAGE OF LOGO AQUI}">
+  <link rel="icon" type="image/x-icon" href="Stationary stow.png">
 </head>
 <button class="tablink" onclick="openPage('Home', this, '#C4ABD8')">Home</button>
 <button class="tablink" onclick="openPage('New', this, '#EBD8FD')" id="defaultOpen">Collaborations</button>
@@ -9,7 +9,7 @@
 <button class="tablink" onclick="openPage('About', this, '#C9A6E8')">Organization Station</button>
 
 <div id="Home" class="tabcontent">
-<center> <img width=100px src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"></center> <br>
+<center> <img width=100px src="Stationary stow.png"></center> <br>
   <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <strong>SHOP!</strong> Be on the Lookout for New Brands and Collaborations!
