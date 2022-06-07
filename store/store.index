@@ -1,0 +1,180 @@
+<html>
+<head>
+  <title>S.Stow</title>
+  <link rel="icon" type="image/x-icon" href="{INSERT IMAGE OF LOGO AQUI}">
+</head>
+<button class="tablink" onclick="openPage('Home', this, '#C4ABD8')">Home</button>
+<button class="tablink" onclick="openPage('New', this, '#EBD8FD')" id="defaultOpen">Collaborations</button>
+<button class="tablink" onclick="openPage('Contact', this, '#A673D3')">Decoration Station</button>
+<button class="tablink" onclick="openPage('About', this, '#C9A6E8')">Organization Station</button>
+
+<div id="Home" class="tabcontent">
+<center> <img width=100px src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"></center> <br>
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>SHOP!</strong> Be on the Lookout for New Brands and Collaborations!
+</div> <br> 
+  <div style="float: left; margin-left: 200px;" class="collab"><img width=300px; src="https://cdn.shopify.com/s/files/1/0268/8263/7995/products/medium_8cbb2862-c99d-4a42-afbc-0bfa9d17e39c.jpg?v=1648664376"><h2>Sanrio Stationary Set</h2>
+  <p>Start your School Year off with a Cute Twist!</p>
+
+
+ </div> 
+ <div style="float: left; margin-left: 200px;" class="withNike"> <img width=300px; src="https://cdn.shopify.com/s/files/1/0416/8083/0620/products/514098-Zoom.1_2000x.jpg?v=1644022875"><h2>Pusheen and Hello Kitty Bento Box</h2>
+  <p>Have a Wonderful Picinic with your Friends</p> </div> 
+<div style="float: left; margin-left: 200px;" class="withSanrio">  <img width=300px; src="https://cdn.shopify.com/s/files/1/0416/8083/0620/products/513822-Zoom.2_1200x.jpg?v=1644022851"><h2>Pusheen and Hello Kitty Notebook Set</h2>
+  <p>Write down your Deepest Darkest Secrets...</p> </div> 
+</div>
+
+<div id="New" class="tabcontent">
+<img width=100% src="https://as1.ftcdn.net/v2/jpg/02/24/50/64/1000_F_224506464_HSWPK4zT0UVBIG1rUIWYxJK3RVeuEdMM.jpg">
+</div>
+
+<div id="Contact" class="tabcontent">
+<img width=100% src="https://as1.ftcdn.net/v2/jpg/02/24/50/72/1000_F_224507202_BCpCYZNpoYKcujh3fUFpomyGOamfkW9m.jpg">
+</div>
+
+<div id="About" class="tabcontent">
+<br> <div> <form autocomplete="off"action="/action_page.php"> <input id="theInput"type="text" name="myInput"placeholder="Search..."></form></div>
+<img width=100% src="https://as1.ftcdn.net/v2/jpg/02/24/50/72/1000_F_224507202_BCpCYZNpoYKcujh3fUFpomyGOamfkW9m.jpg">
+</div>
+</html>
+<style>
+hr.solid {
+  border-top: 15px solid #645E9D;
+border-radius: 0px;
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: pink;
+  color: purple;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #FDECEF;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: pink;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: fff;}
+#New {background-color: fff;}
+#Contact {background-color: fff;}
+#About {background-color: fff;}
+
+.collab{
+   border: 5px outset pink;
+  background-color: white;    
+  text-align: center;
+  width: 350px; 
+height: 450px; 
+}
+.collab:hover{
+width: 400px; 
+height: 500px; 
+box-shadow: 10px 10px 5px purple; 
+font-size: 17px;
+}
+.withNike:hover{
+width: 400px; 
+height: 500px; 
+box-shadow: 10px 10px 5px purple; 
+font-size: 17px;
+}
+.withNike{
+   border: 5px outset pink;
+  background-color: white;    
+  text-align: center;
+width: 350px; 
+height: 450px; 
+} 
+.withSanrio:hover{
+width: 400px; 
+height: 500px; 
+box-shadow: 10px 10px 5px purple; 
+font-size: 17px;
+}
+.withSanrio{
+   border: 5px outset pink;
+  background-color: white;    
+  text-align: center;
+  width: 350px; 
+height: 450px; 
+} 
+#theInput{
+  width: 150px; 
+background-color: lavender;
+border-color: white;
+}
+#formDiv {
+  position: fixed; 
+right: 0;
+} 
+.alert {
+  padding: 15px;
+  background-color: pink;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+<script> 
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
