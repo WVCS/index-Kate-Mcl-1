@@ -1,20 +1,154 @@
 <html>
-<body>
-    <nav>
-      <li classes="nav"> <a href="../index.html"> Home </a> </li>
-      <li classes="nav"> <a href="../cake.html"> Cake </a> </li>
-      <li classes="nav"> <a href="../convince.html"> Convince Site </a> </li>
-      <li classes="nav"> <a href="../circus.html"> Circus Shandi</a> </li>
-      <li classes="nav"> <a href="../Site.html"> Goober Tour</a> </li>
-    </nav>
-  <div class="wrapper">
-   <div class="box a">
-    <center> <h4> Bun's Baked Goods </h4>
-      <img width="280" height="200" src="BUN.png">
- <h2> Baking loaves of love since '84 '</h2> </center>
+<div class="sidenav">
+  <a href="../index.html">About</a>
+  <a href="../Site.html">Music</a>
+  <a href="../store.html">Merch</a>
+  <a href="../main.html">Cory Wong</a>
+</div>
+  <div class="main"> <h1>Bun's Baked Goods</h1>
+   <center> <img width=20% src="Web_Photo_Editor.jpg"></center>
+<div class="slideshow-container">
+<br>
+  <div style="float: left; margin-left: 50px;" class="history"> <p>Our humble little store has been through everything you could imagine! We had a kitchen fire on the first day of our opening and then we had to close due to a nearby danger! We have had many financial hardships during our entire business history, but we manage to scrape by with the love and support from our community. Our establishment has been around since 1983 and we’ve been delivering bun’s baked goods that create smiles, ever since. I hope I can meet you one day and tell you all about our store's rich history!</p> </div>
+
+  <div style="float: left; margin-left: 200px;" class="hours">
+    <p>Monday 9:00 - 4:00 
+Tuesday 9:00 to 4:00 
+Wednesday 9:00 to 4:00 
+Thursday 9:00 to 4:00 
+Friday 9:00 to 4:00
+</p></div>
+<br> 
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://resizer.otstatic.com/v2/photos/wide-huge/1/26091590.jpg" style="width:100%">
+  <div class="text">Enjoy the Nightlife Downtown!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://static.stacker.com/s3fs-public/styles/sar_screen_maximum_large/s3/croppedshutterstock6724363726GOHjpg_175.JPEG" style="width:100%">
+  <div class="text">Our World Famous Breakfast Platter!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=820x10000:format=jpg/path/s9524a0afdc5b40b0/image/i377a42c9529ed9fc/version/1484570408/a-day-in-a-cat-caf%C3%A9-in-seoul-south-korea-sabrina-iovino-justonewayticket-com.jpg" style="width:100%">
+  <div class="text">Cats Enjoy Lounging in our Lounge!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+  <hr>
+    <h2>Leave us a Review!</h2>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    
+    
   </div>
-<div class="box b"> <meta name="viewport" content="width=device-width, initial-scale=1">
+</html>
 <style>
+body {
+  font-family: "Lato", sans-serif;
+background-color: #C9E4E7; 
+color: grey; 
+}
+
+.sidenav {
+  height: 100%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450%) {
+  .sidenav {padding-top: 15%;}
+  .sidenav a {font-size: 10%;}
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -22,7 +156,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 2000px;
   position: relative;
   margin: auto;
 }
@@ -92,15 +226,8 @@ img {vertical-align: middle;}
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -112,44 +239,35 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.history{
+  border: 5px outset pink;
+  background-color: white;    
+  text-align: center;
+  width: 1050px; 
+height: 350px; 
+}
+.history:hover{
+width: 1060px; 
+height: 360px; 
+box-shadow: 10px 10px 5px purple; 
+font-size: 30px;
+}
+.hours{
+  border: 5px outset pink;
+  background-color: white;    
+  text-align: center;
+  width: 270px; 
+height: 350px; 
+}
+.hours:hover{
+width: 300px; 
+height: 360px; 
+box-shadow: 10px 10px 5px purple; 
+font-size: 30px;
+}
 </style>
-</head>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://s36537.pcdn.co/wp-content/uploads/2015/06/20130218_d040c9_0.jpg.optimal.jpg" style="width:100%">
-  <div class="text">Feline Cat-tea!</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://mymodernmet.com/wp/wp-content/uploads/2021/07/rinsforest-capybara-cheesecake-1.jpeg" style="width:100%">
-  <div class="text">Little Animal Fellas</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="http://static.demilked.com/wp-content/uploads/2016/02/adorable-japanese-sweets-wagashi-2.jpg" style="width:100%">
-  <div class="text">Cat Cake! It's Tea time! </div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
 <script>
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -161,147 +279,18 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-  </script>  </div>
-  <div class="box c"><img width="1150" height="880" src="http://4.bp.blogspot.com/-ltvkLSQ8c7Y/U-1Wainbu-I/AAAAAAAASso/O-eJIPv4g3k/s1600/Rabbit%2BBread%2BBuns%2BRecipe%2B(3).JPG">
-    <h1> Our History </h1>
-    <p> Our humble little store has been through everything you could imagine! We had a kitchen fire on the first day of our opening and then we had to close due to a nearby danger! We have had many financial hardships during our entire business history, but we manage to scrape by with the love and support from our community. Our establishment has been around since 1983 and we’ve been delivering bun’s baked goods that create smiles, ever since. I hope I can meet you one day and tell you all about our store's rich history! </p>
-  </div>
-   
-    <div class="box d">
-      <center> <div class="box e"> Store Hours</div>
-    <div class="box f">
-      <table>
-        <tr>
-    <td>Monday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-  <tr>
-    <td>Tuesday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-  <tr>
-    <td>Wednesday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-  <tr>
-    <td>Thursday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-  <tr>
-    <td>Friday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-  <tr>
-    <td>Saturday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-    <tr>
-    <td>Sunday</td>
-    <td>9:00 A.M to 4:00 P.M</td>
-  </tr>
-</table> </center>
-</div>
-  
-</body>
-    </html>
-  <style> 
-    body {
-  margin: 40px;
-  background-color: #C9E4E7;
-}
-
-  .wrapper {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 150px 100px 150px 100px ;
-    grid-template-rows: repeat(3,minmax(100px,auto));
-    background-color: #C9E4E7;
-    color: #444;
-  }
-
-  .box {
-    background-color: #F1F4F9;
-    color: #bbb;
-    border-radius: 3px;
-    padding: 20px;
-    font-size: 150%;
-
-  }
-
-  .box .box {
-    background-color: #bbb;
-    color: #fff;
-  }
-
-  .a {
-    grid-column: 1 / 6;
-    width: 80%;
-    height: 90%;
-    font-size: 150%;
-  }
-
-  .b {
-    grid-column: 1 / 6 ;
-    width: 50%;
-
-  }
-
-  .c {
-    grid-column: .5;
-    grid-row: 2 / 4;
-  }
-
-  .d{
-    grid-column: 1 / 5;
-    grid-row: 2 / 4;
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-    width: 50%;
-    height: 16%;
-  }
-.e{
-  text-align: center;
-  width: 135%;
-  height: 5%;
-  font-size: 70%;
-}
-.f{
-  font-size: 90%;
-  width: 135%;
-  height: 83%;
-  font-size: 52%;
-}
-      .nav{
-  list-style type: none;
-  position: fixed; 
-  background-color: white; 
-  Width: 100%;
-  left: 0;
-  top: 0;
-}
-li{
-  display: inline; 
-  float: right; 
-  padding: 10px
-}
-a {
-  text-decoration: none; 
-  color: Black; 
-  font-size: 15px;
-}
-  </style>
+</script>
